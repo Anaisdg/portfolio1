@@ -1,0 +1,21 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: #D6DBDF;
+  background: white;
+  color: black;
+  font-family: Bookman Old Style;
+}
+
+.index_img {
+  width: 300px;
+  height: 300px;
+}
+
+.index_div {
+  border: solid;
+  border-width: 0.5px;
+  text-align: center;
+}
