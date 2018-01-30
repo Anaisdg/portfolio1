@@ -134,9 +134,73 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="aboutme module">
-          <h3>About Me</h3>
-          <h4> I am a data analyst/story-teller, web developer, and part-time freelancer in Austin, Texas. When I'm not behind a screen, you can find me outside drawing, stretching, boarding, or chasing after a ball. </h4>
+        <div class="aboutme">
+          <div class="modlue">
+            <h3>About Me</h3>
+            <h4> I am a data analyst/story-teller, web developer, and part-time freelancer in Austin, Texas. When I'm not behind a screen, you can find me outside drawing, stretching, boarding, or chasing after a ball. </h4>
+            <br>
+            <a href="https://github.com/Anaisdg">
+                <i class="fa fa-github fa-2x fa-fw icon_color"></i>
+              </a>
+            <a href="https://www.linkedin.com/in/anais-dotis-georgiou-029623113/">
+                <i class="fa fa-linkedin fa-2x fa-fw icon_color"></i>
+              </a>
+            <a href="https://twitter.com/AnaisDotis">
+                  <i class="fa fa-twitter fa-2x fa-fw icon_color"></i>
+              </a>
+          </div>
+
+          <p>
+            <br>
+          </p>
+
+          <form id="contact-form" method="post" action="contact.php" role="form" class="module">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+              </div>
+            </div>
+
+          </form>
+
         </div>
       </div>
     </div>
@@ -149,7 +213,7 @@
     </div>
   </div>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
       <div class="container">
         <a href="https://github.com/Anaisdg">
           <i class="fa fa-github fa-2x fa-fw pull-right icon_color"></i>
@@ -161,7 +225,7 @@
             <i class="fa fa-twitter fa-2x fa-fw pull-right icon_color"></i>
         </a>
       </div>
-    </footer>
+    </footer> -->
 
   <script src="index.js" type="text/javascript"></script>
 </body>
