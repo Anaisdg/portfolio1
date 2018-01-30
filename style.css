@@ -1,3 +1,5 @@
+
+
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -5,14 +7,30 @@
   padding-left: 4%;
   padding-right: 4%;
   font-size: 1.2em;
-  border: #D6DBDF;
-  background: #fff;
+  background: white;
   font-family: Oxygen;
 }
 
+
 .navbar-brand {
+  float: left;
+  min-height: 55px;
+  background-color: #fff;
   color: black;
-  font-weight: bold;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus{
+  background-color: transparent;
+  color: #999999;
 }
 
 .nav-link {
@@ -105,8 +123,6 @@
   /* margin-left: 80px; */
   font-family: Oxygen;
   font-size: 18px;
-  /* text-align: center; */
-
 }
 
 .bold-list {
@@ -198,3 +214,35 @@
   padding: 10px;
   /* margin-left: 65px;
   margin-right: 65px; */
+}
+
+  .aboutme_img{
+    max-width: 100%;
+    height: auto;
+    }
+
+  .aboutme{
+    text-align: left;
+    font-family: Oxygen;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .block-content{
+    text-align: left;
+    font-family: Oxygen;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+}
+
+.icon_color {
+  color: black;
+}
