@@ -77,6 +77,13 @@
   font-family: Oxygen;
 }
 
+.sub_project_description {
+  text-align: left;
+  padding-left:25px;
+  padding-right: 25px;
+  font-family: Oxygen;
+}
+
 
 .code_btn {
   display: inline-block;
