@@ -125,6 +125,13 @@
   font-size: 18px;
 }
 
+.game_example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .bold-list {
   font-weight: bold;
   font-size: 18px;
@@ -154,6 +161,7 @@
   font-style: italic;
 }
 
+
 .scary_plot_description {
   text-align: left;
   font-family: Oxygen;
@@ -161,7 +169,7 @@
   font-size: 18px;
 }
 
-.mars_img_top {
+.mars_img_top, .music_img_top {
   max-width: 80%;
   height: auto;
   padding: 3px;
@@ -172,11 +180,21 @@
   border-color: gray;
 }
 
-.mars_img_bottom {
+.mars_img_bottom, .music_img_bottom {
   max-width: 80%;
   height: auto;
   padding: 3px;
   border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.music_img_middle{
+  max-width: 80%;
+  height: auto;
+  padding: 3px;
   border-left: solid;
   border-right: solid;
   border-width: 0.5px;
