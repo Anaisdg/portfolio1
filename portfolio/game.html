@@ -60,7 +60,7 @@
         <h2 class="project_title"> SET Card Game Image Recognition </h2>
         <h3 class="project_description"> An image recognition web application that allows a user to input a picture of the board and finds all the SETs according to the rules of the game. </h3>
         <button type="button" onclick="window.location.href='https://github.com/Anaisdg/OpenCV'" class="code_btn" style="vertical-align:middle"> <span>View Code </span></button>
-        <button type="button" onclick="window.location.href=#" class="code_btn" style="vertical-align:middle"> <span>View Blog </span></button>
+        <button type="button" onclick="window.location.href='https://medium.com/@dganais/ready-set-image-recognition-720be22d7051'" class="code_btn" style="vertical-align:middle"> <span>View Blog </span></button>
       </div>
     </div>
 
@@ -138,7 +138,7 @@
 
     <div class="row module">
       <div class="col-md-12">
-        <p class="scary_plot_description"> Turns out, that's because humans aren't really that good at finding SETs. There are 81 unique cards in this game, which yeilds 1080 unique SETs. The odds against there being no SET in 12 cards when playing a game of SET start off at 30:1 for the first round. Then they quickly fall, and after about the 4th round they are 14:1 and for the next 20 rounds they slowly fall towards 13:1. So for most of the rounds played, the odds are between 14:1 and 13:1. The odds against there being no SET in 15 cards when playing a game are 88:1.
+        <p class="scary_plot_description"> Turns out, that's because humans aren't really that good at finding SETs. There are 81 unique cards in this game, which yields 1080 unique SETs. The odds against there being no SET in 12 cards when playing a game of SET start off at 30:1 for the first round. Then they quickly fall, and after about the 4th round they are 14:1 and for the next 20 rounds they slowly fall towards 13:1. So for most of the rounds played, the odds are between 14:1 and 13:1. The odds against there being no SET in 15 cards when playing a game are 88:1.
           <br>
           To help you and your friends find the SET that probably exists and prevent you from pulling your hair out, my team and I made a web appication that allows you to upload a picture of your board and finds the SETs for you!
 
@@ -176,7 +176,7 @@
           <br>
           <strong> Image Uplaod:</strong> The user takes an uplaods a piture of their board.
           <br>
-          <strong> Card Identification & Cropping: </strong> With OpenCV, the contours of the edge of the cards are detected, the cards are cropped, and temporarily stored in a directory.
+          <strong> Card Identification & Image Segmentation: </strong> With OpenCV, the contours of the edge of the cards are detected, the cards are cropped (image segmentation), and temporarily stored in a directory.
           <br>
           <strong> Card Prediction and Prediction Decoding:  </strong> The color of the shapes in the cropped cards are identified using OpenCV. The cropped card is then run through a Keras model which predicts which class the card belongs to. The model we made has 92% accuracy for categorical classification. After the prediction is made, a decoder asigns the appropriate label which contains information on the rest of the card features (shape, number of symbols, and shading)
           <br>
